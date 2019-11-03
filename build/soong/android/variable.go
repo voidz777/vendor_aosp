@@ -14,6 +14,9 @@ type Product_variables struct {
 		Overrides []string
 		Shared_libs []string
 	}
+	Has_hh_vsync_issue struct {
+		Cflags []string
+	}
 	Should_wait_for_qsee struct {
 		Cflags []string
 	}
@@ -73,6 +76,7 @@ type ProductVariables struct {
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
+	Has_hh_vsync_issue  *bool `json:",omitempty"`
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_extended_compress_format  *bool `json:",omitempty"`
