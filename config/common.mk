@@ -205,7 +205,7 @@ include vendor/aosp/config/branding.mk
 include vendor/aosp/config/ota.mk
 
 # GApps
-include vendor/gapps/config.mk
+#include vendor/gapps/config.mk
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
@@ -215,6 +215,13 @@ PRODUCT_PACKAGES += \
     Terminal
 
 # Customization
-include vendor/google/customization/config.mk
+#include vendor/google/customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+PRODUCT_PACKAGES += \
+    Contacts \
+    Dialer \
+    Gallery2 \
+    LatinIME \
+    messaging
